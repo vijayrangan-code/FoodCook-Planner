@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page - FoodCook Planner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/index.css" />
+    <style>
+      table {
+        margin: 20px auto;
+        border-spacing: 0;
+        cursor: pointer;
+      }
+      tr:first-child {
+        background-color: #1b63ff;
+        color: #fff;
+      }
+      th,
+      td {
+        padding: 5px 15px;
+        font-size: 15px;
+        border: 1px solid black;
+      }
+      table a {
+        font-size: 15px;
+        color: darkblue;
+      }
+      tr:active {
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      FoodCook Planner
+      <a href="index.html" style="padding: 2px 10px; font-size: 15px"
+        >Back</a
+      >
+    </header>
+    <main>
+      <h4>Autors of FoodCook Planner</h4>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>GitHub</th>
+          <th>Contact Details</th>
+        </tr>
+        <tr>
+          <td>Vijay</td>
+          <td>Github.com</td>
+          <td><a href="#">https://fb.me/vijay</a></td>
+        </tr>
+        <tr>
+          <td>Bavi</td>
+          <td>Github.com</td>
+          <td><a href="#">https://fb.me/bavi</a></td>
+        </tr>
+        <tr>
+          <td>Mokshi</td>
+          <td>Github.com</td>
+          <td><a href="#">https://fb.me/mokshi</a></td>
+        </tr>
+      </table>
+      <!-- Start Donation Page -->
+      <div>
+        <button
+          data-toggle-id="donate-form"
+          style="font-size: 12px; padding: 2px 10px; margin: 5px"
+        >
+          Support Authors
+        </button>
+        <form id="donate-form" style="margin-top: 5px">
+          <span>₹</span>
+          <input
+            type="number"
+            placeholder="Enter your Amount..."
+            id="inputTxt"
+            style="padding: 2px 10px"
+            min="1"
+          />
+          <button
+            id="btn"
+            style="
+              font-size: 12px;
+              background-color: #1b63ff;
+              border: none;
+              color: #fff;
+              border-radius: 5px;
+              padding: 5px 10px;
+              margin: 5px;
+            "
+          >
+            Donate
+          </button>
+        </form>
+      </div>
+      <!-- End Donation Page -->
+    </main>
+    <script src="assets/js/about.js"></script>
+    
+  </body>
+</html>

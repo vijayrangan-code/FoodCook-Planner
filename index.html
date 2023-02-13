@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/index.css" />
+    <style>
+      #alert-message{
+        display: none;
+      }
+    </style>
+  </head>
+
+  
+  <body>
+    <header>
+      FoodCook Planner
+     <a href="about.html"  style="padding: 2px 10px; font-size: 15px;">Credits</a>
+     <a href="FeedBack.html"  style="padding: 2px 10px; font-size: 15px;">Feedback</a>
+    </header>
+    <main id="main">
+
+    
+        <div id="alert-message">
+          <div class="width" id="strong">
+          <strong>✅Successful</strong> Food is updated!
+          </div>
+          <div  class="width">
+          <button class="btn" type="button" id="succesfull" onclick="removeAlert()">X</button>
+          </div>
+        </div>
+        
+      
+
+      <div class="input-container">
+        <input type="text" placeholder="I like to eat...." id="input-food" class="input-food"  />
+        <button class="input-btn" id="input-btn" >Save</button>
+      </div>
+      <section>
+        <div id="food-list-statistics"></div>
+        <ul class="food-container" id="food-container"> 
+
+          
+        </ul>
+        <div id="no-list">
+          <img src="assets/images1.png" alt="Not Found!">
+          <h6> create your Food Items</h6>
+        </div>
+      </section>
+
+    
+    
+    </main>
+    <script src="assets/js/index.js"></script>
+   
+  </body>
+</html>
